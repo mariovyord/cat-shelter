@@ -1,0 +1,13 @@
+{{#with cat}}
+<form action="/cat-shelter/{{_id}}" method="POST" class="cat-form">
+	<h2>Shelter the cat</h2>
+	<img src="{{imageUrl}}" alt="Cat Picture">
+	<label for="name">Name</label>
+	<input type="text" id="name" value="{{name}}" disabled>
+	<label for="description">Description</label>
+	<textarea id="description" disabled>{{description}}</textarea>
+	<label for="group">Breed</label>
+	<input type="text" id="name" value="{{breed}}" disabled>
+	<button>SHELTER THE CAT</button>
+</form>
+{{/with}}
